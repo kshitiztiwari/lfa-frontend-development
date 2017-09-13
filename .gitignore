@@ -1,0 +1,8 @@
+# Keynote files
+*.key
+
+# MAC Files
+.DS_Store
+
+# Other Resources Folter
+_resources
