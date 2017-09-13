@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lord of the rings</title>
+
+	<meta name="keyword" content="ring, mordor, gollom"/>
+	<meta name="author" content="J. R. R. Tolkien" />
+	<meta name="description" content="The Lord of the Rings is an epic high fantasy novel written by English author and scholar J. R. R. Tolkien."/>
+</head>
+<body>
+
+	<main>
+		<article class="article">
+			
+			<header>
+				<h1>Lord of the rings</h1>
+			</header>
+
+			<figure>
+				<img src="img/jrr_tolkien.jpg"/>
+				<figcaption>JRR Tolkien</figcaption>
+			</figure>
+
+
+			<p>
+				<img src="img/lotr.jpeg" alt=""/>
+				The Lord of the Rings is an epic high fantasy novel written by English author and scholar
+				<em>J. R. R. Tolkien.</em>
+			</p>
+		
+
+
+			<section class="series">
+				<h2>Lord of the rings Series</h2>
+				<p>there are 3 series of LOTR</p>
+				<ol>
+					<li>The Fellowship of the Ring</li>
+					<li>The Two Towers</li>
+					<li>The Return of the King</li>
+				</ol>
+			</section>
+
+			<section class="characters">
+				<h2>Lord of the ring's Characters</h2>
+				<ul>
+					<li>Frodo Baggins</li>
+					<li>Bilbo Baggins</li>
+					<li>Gandalf</li>
+					<li>and so on</li>
+				</ul>
+			</section>
+
+			<aside><a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings">Learn more about LOTR</a></aside>
+
+			<footer>
+				<p>Written by: J. R. R. Tolkien</p>
+			</footer>
+
+		</article>
+
+
+		<!-- Table Example -->
+		<table style="margin-top:200px; margin-bottom:200px">
+			<thead>
+				<tr>
+					<th>Image</th>
+					<th>Name</th>
+					<th>Type</th>
+				</tr>
+			</thead>
+
+			<tfoot>
+				<tr>
+					<td>Image</td>
+					<td>Name</td>
+					<td>Type</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td><img src="img/lotr.jpeg"></td>
+					<td>Frodo Baggins</td>
+					<td>Hobbit</td>
+				</tr>
+				<tr>
+					<td><img src="img/lotr.jpeg"></td>
+					<td></td>
+					<td>Wizard</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+
+		<!-- Form Example -->
+		<form action="">
+			<h3>Book a Ticket for <strong>Lord of the Rings</strong></h3>
+				
+			<p>
+				<label>Your Name</label><br>
+				<input type="text" placeholder="Your Name" id="your_name" name="name" required>
+			</p>
+
+			<p>
+				<label>Your email</label><br>
+				<input type="email" placeholder="Your email" id="your_email" name="email" required>
+			</p>
+
+			<p>
+				<label>
+					Your Address<br>
+					<textarea id="your_address" name="address" placeholder="eg. Siddhi Mani Bhawan, Dillibazar" rows="5"></textarea>
+				</label>
+			</p>
+
+			<!-- <p>
+				<span>Number of tickets</span><br>
+				<input type="radio" name="no_of_tickets" id="no_of_tickets_1"><label for="no_of_tickets_1">1</label></input>	
+				<input type="radio" name="no_of_tickets" id="no_of_tickets_2"><label for="no_of_tickets_2">2</label></input>
+				<input type="radio" name="no_of_tickets" id="no_of_tickets_3"><label for="no_of_tickets_3">3</label></input>
+			</p> -->
+
+			<p>
+				<span>Number of tickets</span><br>
+				<input type="number" name="number_of_tickets" min="0" max="10">
+			</p>
+
+			<p>
+				<select name="select_series" id="select_series">
+					<option value="">Select Series</option>
+					<option value="1">The Fellowship of the Ring</option>
+					<option value="2">The Two Towers</option>
+					<option value="3">The Return of the King</option>
+				</select>
+			</p>
+
+			<p>
+				<select name="show_time" id="show_time">
+					<option value="">Select Time</option>
+					<option value="1100">11:00 AM</option>
+					<option value="1400" selected>14:00 PM</option>
+					<option value="1800">18:00 PM</option>
+				</select>
+			</p>
+
+			<!-- <input type="submit" value="Book a movie"> -->
+
+		<p>
+			<button>Book a Ticket</button>
+		</p>
+
+		</form>
+	</main>
+</body>
+</html>
