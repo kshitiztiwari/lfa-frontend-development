@@ -3,6 +3,10 @@ Frontend development course by Leapfrog Academy. This course aims for beginners 
 This course will cover the basics of HTML, CSS and JS after which the SASS is covered. Student will finally learn [Bootstrap](https://getbootstrap.com/) (Frontend Framework)
 to create responsive webpage templates.
 
+All the codes and resources are placed inside their respective folders. HTML and CSS files will be inside the HTML folder
+For the class that have HTMl/CSS Exercise, there is *snippet* folder inside where the code snippets are placed. 
+
+
 ## Course Objectives
 1. Learn HTML and CSS
 2. Basic idea of JS and JQuery
