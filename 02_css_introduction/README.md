@@ -13,10 +13,6 @@ List of available Pseudo classes
 # Reading List 
 The Reading list for this class are very important place have a look at them. 
 
-[How CSS selectors works](https://medium.freecodecamp.org/explained-css-pseudo-classes-cef3c3177361)
-
-[Advanced CSS Selectors]
-(https://medium.com/the-web-crunch-publication/advanced-css-selectors-you-never-knew-about-972d8275d079)
-
-[CSS Box Modal]
-(https://css-tricks.com/the-css-box-model/)
+ * [How CSS selectors works](https://medium.freecodecamp.org/explained-css-pseudo-classes-cef3c3177361)
+ * [Advanced CSS Selectors](https://medium.com/the-web-crunch-publication/advanced-css-selectors-you-never-knew-about-972d8275d079)
+ * [CSS Box Modal](https://css-tricks.com/the-css-box-model/)
