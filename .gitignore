@@ -1,8 +1,12 @@
 # Keynote files
 *.key
 
+# Sketch Files
+*.sketch
+
 # MAC Files
 .DS_Store
 
 # Other Resources Folter
 _resources
+

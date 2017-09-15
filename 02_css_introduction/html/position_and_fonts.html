@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lord of the Rings</title>
+
+	<!--
+	 Loading fontS from Google font
+	 https://fonts.google.com/
+	 -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+	<style>
+		body {
+			font-family: 'Raleway', sans-serif;		
+		}
+		
+		/** 
+		 * Position Classes
+		 */
+		.relative {
+			position: relative;
+		}
+
+		.absolute {
+			position: absolute;
+		}
+
+	
+		.box{
+			width: 100px;
+			display: inline-block;
+			background-color: cyan;
+		}
+
+		.cyan {
+			background-color: cyan;
+			height: 60px;
+		}
+
+		.maroon {
+			background-color: maroon;
+			height: 100px;
+		}
+
+		.position .relative.maroon, .position .absolute.maroon{
+			top: 40px;
+			left: 40px;
+		}
+
+		.red {
+			background-color: red;
+			height: 80px;
+		}
+
+		.position {
+			margin-top: 80px;
+			margin-bottom: 80px;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aut hic mollitia fuga consequuntur. Impedit laboriosam possimus voluptatibus consectetur dignissimos ea accusantium aliquam, fugit soluta, ut inventore iste <em>exercitationem qui!</em></p>
+	<div class="position">
+		<div class="box red"></div>
+		<div class="box maroon"></div>
+		<div class="box cyan"></div>
+	</div>
+
+	
+	<!--
+	Notice the maroon box that it is positioned relative to itself
+	-->
+	<div class="position">
+		<div class="box red"></div>
+		<div class="box maroon relative"></div>
+		<div class="box cyan"></div>
+	</div>
+
+	<!--
+	Notice the maroon box that it is positioned absolute to body ( Nearest parent that is positioned).
+	-->
+	<!-- <div class="position">
+		<div class="box red"></div>
+		<div class="box maroon absolute"></div>
+		<div class="box cyan"></div>
+	</div> -->
+
+	<!--
+	Notice the maroon box that it is positioned absolute to its parent ( Nearest parent that is positioned).
+	-->
+	<div class="position relative">
+		<div class="box red"></div>
+		<div class="box maroon absolute"></div>
+		<div class="box cyan"></div>
+	</div>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aut hic mollitia fuga consequuntur. Impedit laboriosam possimus voluptatibus consectetur dignissimos ea accusantium aliquam, fugit soluta, ut inventore iste exercitationem qui!</p>
+
+
+</body>
+</html>
