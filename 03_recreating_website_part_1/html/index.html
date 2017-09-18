@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lord of the Rings Character</title>
+	<style>
+		/**
+		 * Collapse multiple borders from td element
+		 */
+		table {
+			border-collapse: collapse;
+		}
+
+		td {
+			border: 1px solid;
+		}
+
+		th{
+			background-color: cyan;
+		}
+
+		/**
+		 * Child selector test
+		 */
+		tr:first-child tr{
+			background-color: red;
+		}
+
+		tr:nth-child(2n+1){
+			background-color: red;
+		}
+
+		td {
+		  	 vertical-align: top;
+			/*padding: t r b l;*/
+		  	 padding: 20px 0 10px 12px;
+		}
+
+		/**
+		 * Round edge image
+		 */
+		img {
+			    /*border-top-left-radius: 20px ;*/
+
+			    border-radius: 20px 30px 40px 50px;
+
+		}
+
+		/**
+		 * Vertically center content with the display: table-cell; property
+		 */
+		.box {
+			width: 200px;
+			height: 200px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Lord of the rings Characters</h1>
+		<div class="box">
+			Content
+		</div>
+	<table>
+		<thead>
+			<tr>
+				<th>Character Name</th>
+				<th>Type</th>
+				<th>Image</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Frodo Baggins</td>
+				<td>Hobbit</td>
+				<td><img src="images/frodo.jpeg"></td>
+			</tr>
+			<tr>
+				<td>Bilbo Baggins</td>
+				<td>Hobbit</td>
+				<td><img src="images/bilbo.jpeg"></td>
+			</tr>
+			<tr>
+				<td>Gandalf</td>
+				<td>Wizard</td>
+				<td><img src="images/gandalf.jpeg"></td>
+			</tr>
+			<tr>
+				<td>Theoden</td>
+				<td>King</td>
+				<td><img src="images/theoden.jpeg"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>Character Name</td>
+				<td>Type</td>
+				<td>Image</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
