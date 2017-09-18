@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inline Block Fix</title>
+	<style>
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: cyan;
+			display: inline-block;
+		}
+
+		/**
+		 * In this example the parents div's font size is set to zero and the value
+		 * is reset inside the box class.
+		 */
+		.box-wrapper-inline-fix{
+			font-size: 0;
+		}
+
+		.box-wrapper-inline-fix .box {
+			font-size: 16px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+
+	<!-- Inline box issues 
+		Details and some more solutions:
+		https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+	-->
+
+	<!-- Solution 1: Remove the whitespaces from the content -->
+	<div class="box-wrapper">
+		<div class="box">Box</div>
+		<div class="box">Box</div>
+		<div class="box">Box</div>
+	</div>
+
+	<div class="box-wrapper">
+		<div class="box">Box</div><div class="box">Box</div><div class="box">Box</div>
+	</div>
+	
+	<!-- Solution 2: Add comment to block whitespace -->
+	<div class="box-wrapper">
+		<div class="box">Box</div><!-- 
+		 --><div class="box">Box</div><!-- 
+		 --><div class="box">Box</div>
+	</div>
+
+	
+	 <!-- See the css for `.box-wrapper-inline-fix` -->
+	<div class="box-wrapper box-wrapper-inline-fix">
+		<div class="box">Box</div>
+		<div class="box">Box</div>
+		<div class="box">Box</div>
+	</div>
+</body>
+</html>

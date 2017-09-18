@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Margin Collapse</title>
+	<style>
+
+		body {
+			font-family: 'Helvetica', 'Arial';
+		}
+		.example-wrapper{
+			border-radius: 4px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+			min-height: 100px;
+			padding: 16px;
+		}
+
+		.outer-wrapper, .inner-wrapper {
+			border-radius: 4px;
+			min-height: 100px;
+		}
+		.outer-wrapper {
+			background-color: cyan;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+		.inner-wrapper {
+			background-color: magenta;
+			margin-top: 100px;
+			margin-bottom: 100px;
+		}
+
+
+		/*Solving the margin collapse issue*/
+
+		/*.outer-wrapper {
+			overflow: auto;
+		}*/
+		
+		/*.outer-wrapper:before {
+			content: '';
+			display: table;
+			width: 100%;
+		}*/
+
+
+		/**
+		 * Clearfix
+		 */
+/*		
+		.clearfix {
+			content: ' ';
+			display: table;
+			clear: both;
+		}
+*/
+	</style>
+</head>
+<body>
+	<div class="example-wrapper">
+		Main wrapper
+
+		<!--
+		Notice how the inners wrapper margins are collapsed
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+		https://www.sitepoint.com/collapsing-margins/
+		-->
+		<div class="outer-wrapper">
+			<!-- Outer Wrapper -->
+			<div class="inner-wrapper">
+				Inner wrapper
+			</div>
+		</div>
+
+		<!-- Notice the collapsed margin of outer-wrapper -->
+		<div class="outer-wrapper">
+			Outer Wrapper
+			<div class="inner-wrapper">
+				Inner wrapper
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Margin Collapse</title>
+	<style>
+
+		/*
+		* Box Sizing: https://css-tricks.com/box-sizing/
+		*/
+		* {
+			box-sizing: border-box;
+		}
+
+		html {
+			box-sizing: border-box;	
+		}
+
+		*, *:after, *:before {
+			box-sizing: inherit;
+		}
+
+		
+		body {
+			font-family: 'Helvetica', 'Arial';
+		}
+		.example-wrapper{
+			border-radius: 4px;
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			width: 640px;
+			margin-left: auto;
+			margin-right: auto;
+			min-height: 100px;
+			padding: 16px;
+		}
+
+		.outer-wrapper, .inner-wrapper {
+			border-radius: 4px;
+			min-height: 100px;
+		}
+		.outer-wrapper {
+			background-color: cyan;
+			margin-top: 40px;
+		}
+		
+
+		.inner-wrapper {
+			background-color: magenta;
+			margin-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="example-wrapper">
+		Main wrapper
+		<div class="outer-wrapper">
+			<!-- Outer Wrapper -->
+			<div class="inner-wrapper">
+				Inner wrapper
+			</div>
+		</div>
+	</div>
+</body>
+</html>
