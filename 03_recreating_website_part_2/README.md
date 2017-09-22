@@ -5,6 +5,7 @@
  * [CSS Font-Size: em vs. px vs. pt vs. percent](https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/)
 
 ## CSS Animation References
+ * [CSS Animation Reference - CSS TRicks](https://css-tricks.com/almanac/properties/a/animation/)
  * [CSS Animation for Beginners](https://robots.thoughtbot.com/css-animation-for-beginners)
  * [Animate.css - A CSS animation library](https://daneden.github.io/animate.css/)
 
