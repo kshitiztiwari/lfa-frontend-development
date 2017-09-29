@@ -21,7 +21,7 @@ body, html, figure  {
 
 
 
-body {
+body, input, textarea, button {
 	font-family: 'Merriweather', serif;
 }
 
@@ -33,6 +33,28 @@ a {
 	text-decoration: none;
 	color: #A4904F;
 }
+
+label {
+	display: block;
+}
+
+input, textarea {
+	margin-top: 8px;
+	padding: 12px;
+	font-size: 1.2em;
+	border: 1px solid #666;
+	border-radius: 2px;
+	transition: box-shadow 300ms ease-in-out;
+}
+
+input:focus, textarea:focus {
+	border-color: #333;
+	outline: 0;
+	box-shadow: 0 0 12px rgba(0,0,0,0.5);
+}
+
+
+
 
 .clearfix {
 	clear: both;
@@ -60,6 +82,15 @@ a {
 	transform: rotate(45deg);
 }
 
+
+.rectangle-2 {
+	background-color: red;
+	width: 100px;
+}
+
+.rectagle-wrapper {
+	padding-bottom: 100%;
+}
 
 .wrapper {
 	width: 940px;
@@ -109,6 +140,8 @@ a {
 	font-weight: bold;
 
 	transition: all 300ms ease-in-out;
+
+	border: none;
 }
 
 .button:hover {
@@ -152,6 +185,7 @@ a {
  */
 .series {
 	margin-top: -100px;
+	margin-bottom: 100px;
 }
 
 .series:after {
@@ -179,8 +213,28 @@ a {
 .series-item img {
 	width: 100%;
 	border-radius: 4px;
+	display: block;
 }
 
+.series-item-wrapper {
+	transition: box-shadow 300ms ease-in-out;
+}
+
+.series-item-wrapper:hover {
+	box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.4);
+	/*transition: box-shadow 3s ease-in-out;*/
+}
+
+.series-info {
+	/*display: none;*/
+	transition: opacity 300ms;
+	opacity: 0;
+}
+
+.series-item:hover .series-info {
+	/*display: block;*/
+	opacity: 1;
+}
 
 
 .series-info {
@@ -208,6 +262,30 @@ a {
 	margin-top: 16px;
 }
 
+
+
+
+
+.book-ticket input[type="checkbox"]{
+	display: none;
+}
+/*
+.book-ticket input[type="checkbox"] + span {
+	display: none;
+}
+
+.book-ticket input[type="checkbox"]:checked + span {
+	display: inline-block;
+}*/
+
+
+.book-ticket input[type="checkbox"] + span:after {
+	content: '\002715';
+}
+
+.book-ticket input[type="checkbox"]:checked + span:after {
+	content: '\002714';
+}
 
 
 
