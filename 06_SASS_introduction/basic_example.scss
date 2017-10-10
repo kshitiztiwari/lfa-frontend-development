@@ -1,0 +1,27 @@
+// SASS Example with Variable
+$button-padding: 16px;
+
+.button {
+	padding: $button-padding; 
+	background-color: chocolate;
+
+	a {
+		color: black;
+	}
+}
+
+
+.button {
+	padding: 16px; 
+	background-color: chocolate;
+}
+
+.button a {
+	color: black;
+}
+
+
+
+// CSS , SCSS, SASS
+
+
