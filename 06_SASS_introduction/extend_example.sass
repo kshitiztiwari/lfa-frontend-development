@@ -1,0 +1,24 @@
+%button {
+  padding: 8px 24px;
+  display: inline-block;
+}
+
+
+@mixin button( $name, $background-color, $border-radius ) {
+  .#{$name}-button {
+    border-radius: $border-radius;
+    border: 1px solid chocolate;
+    @extend %button;
+    background-color: $background-color;
+    
+    &:hover {
+      background-color: darken($background-color, 10%);
+    }
+  }
+}
+
+
+@include button( 'normal', chocolate, 4px );
+
+@include button ( 'search', blue, 8px );
+
