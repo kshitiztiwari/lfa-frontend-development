@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Web Design</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.container {
+			padding: 24px;
+			background-color: black;
+			color: white;
+		}
+
+		@media (min-width: 640px ){
+			.width:before {
+				content: 'This viewport at least than 640px wide';
+			}
+		}
+
+		@media (max-width: 640px ){
+			.width:before {
+				content: 'This viewport smaller than 640px wide';
+			}
+
+			h1 {
+				color: blue;
+			}
+		}
+
+		@media (max-width: 940px ) and (min-width: 760px) {
+			.width:before {
+				content: 'The viewport width is between 940px and 760px';
+			}
+		}
+
+		@media (orientation: landscape ){
+			.orientation:before {
+				content: 'Orientation: landscape';
+			}
+		}
+
+		@media (orientation: portrait ){
+			.orientation:before {
+				content: 'Orientation: portrait';
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Media Query Demo</h1>
+		<div class="width"></div>
+		<div class="orientation"></div>
+	</div>
+</body>
+</html>
