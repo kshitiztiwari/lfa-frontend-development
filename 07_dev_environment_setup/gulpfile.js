@@ -4,10 +4,10 @@ var gulp = require('gulp'),
 	sourcemaps = require('gulp-sourcemaps');
 
 // Paths 
-sassSrc = './sass/**/*.sass';
-sassWatchFiles = sassSrc;
-styleDest = './';
-mapsDest = styleDest;
+var sassSrc = './sass/**/*.sass',
+	sassWatchFiles = sassSrc,
+	styleDest = './',
+	mapsDest = styleDest;
 
 
 // Gulp SASS Task
