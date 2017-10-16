@@ -1,0 +1,32 @@
+.header {
+  background-image: url("images/img_poster.jpg");
+  color: white;
+  padding-bottom: 32px;
+  padding-top: 128px; }
+
+.hero-title {
+  margin-top: 64px; }
+
+.hero-subtitle {
+  margin-bottom: 32px; }
+
+.hero-btn {
+  background-color: #A4904F;
+  color: white; }
+  .hero-btn:hover {
+    background-color: #82723e;
+    color: white; }
+
+.about-lotr {
+  padding-top: 64px;
+  padding-bottom: 128px;
+  background-color: #ebe5d4; }
+
+.author-image img {
+  width: 240px; }
+
+@media (max-width: 576px) {
+  .author-image-holder {
+    order: -1; } }
+
+/*# sourceMappingURL=style.css.map */
