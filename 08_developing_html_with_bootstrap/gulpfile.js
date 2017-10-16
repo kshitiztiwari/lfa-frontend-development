@@ -19,12 +19,6 @@ gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.sass', ['sass']);
 }); 
 
-gulp.task('html:watch', function () {
-  gulp.watch('./hmtl/**/*.html', ['html']);
-});
-
-
-
 gulp.task('default', ['sass', 'sass:watch']);
 
 
